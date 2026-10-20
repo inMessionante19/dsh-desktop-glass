@@ -1,0 +1,24 @@
+{
+  "name": "dsh-desktop-glass",
+  "version": "0.3.0",
+  "description": "DeepSeek Harness 原生毛玻璃与完全透明双模式，实时显示 Wallpaper Engine 和后方窗口",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": { ".": "./lib/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "files": ["lib/index.js", "lib/client.js", "native", "cordis.patch.yml", "README.md", "CHANGELOG.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/inMessionante19/dsh-desktop-glass.git" },
+  "homepage": "https://github.com/inMessionante19/dsh-desktop-glass#readme",
+  "bugs": { "url": "https://github.com/inMessionante19/dsh-desktop-glass/issues" },
+  "keywords": ["deepseek-harness", "windows", "electron", "acrylic", "transparency", "wallpaper-engine"],
+  "scripts": { "test": "node --test" },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-ui-renderer", "@deepseek-ai/dsh-client-ui-settings"],
+      "platform": "web"
+    }
+  }
+}
