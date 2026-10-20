@@ -6,6 +6,8 @@ Native frosted glass and full transparency for DeepSeek Harness on Windows, with
 
 这是社区插件，与 DeepSeek 官方无关联。当前已验证官方 Windows Electron 桌面版 **DeepSeek Harness 0.2.1-rc.2 / Electron 44.7.0**；其他版本的程序结构可能不同。
 
+历史毛玻璃版本：[v0.2.1（失焦修复版）](https://github.com/inMessionante19/dsh-desktop-glass/releases/tag/v0.2.1)、[v0.2.0（初始原生版本）](https://github.com/inMessionante19/dsh-desktop-glass/releases/tag/v0.2.0)。0.2 系列仅含毛玻璃，0.3.0 起支持完全透明和模式选择。
+
 支持 **毛玻璃 / 完全透明** 两种原生背景模式，可在设置中随时切换并自动保存。毛玻璃实时模糊窗口后方的桌面和应用；完全透明关闭原生模糊、遮罩和主界面背景填充，直接透出后方画面。文字、图标保持不透明，设置弹窗和菜单保留可读底色。
 
 Wallpaper Engine 的动态画面由系统合成，拖动、缩放窗口时显示后方对应位置，两种模式在失去焦点时均保持效果。沿用 0.2.1 的持续毛玻璃实现。
