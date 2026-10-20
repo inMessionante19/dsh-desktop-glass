@@ -1,0 +1,19 @@
+{
+  "name": "dsh-desktop-glass",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness Windows 原生 Acrylic 毛玻璃，实时合成 Wallpaper Engine 和后方窗口",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": { ".": "./lib/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "files": ["lib/index.js", "lib/client.js", "native", "cordis.patch.yml", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-ui-renderer", "@deepseek-ai/dsh-client-ui-settings"],
+      "platform": "web"
+    }
+  }
+}
